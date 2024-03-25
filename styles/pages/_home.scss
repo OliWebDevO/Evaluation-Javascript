@@ -131,6 +131,21 @@ body {
     z-index: 2;
     color: white;
     width: 300px;
+    background-color: white;
+    .contenu-panier {
+        display: none;
+        padding: 20px;
+        color: rgba(128, 128, 128, 0.701);
+        h5 {
+            margin: 0;
+        }
+        div {
+            margin: 15px;
+        }
+        p {
+            margin: 0;
+        }
+    }
     .title {
         background-color: rgba(145, 28, 255, 0.972);
         display: flex;
@@ -142,4 +157,16 @@ body {
             margin: 0;
         }
     }
+}
+
+.mise-box {
+    display: flex;
+    justify-content: space-between;
+    input {
+        width: 70px;
+    }
+}
+.gain-box {
+    display: flex;
+    justify-content: space-between;
 }
