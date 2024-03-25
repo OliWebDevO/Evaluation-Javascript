@@ -21,6 +21,9 @@ body {
    i {
     padding-bottom: 50px;
     font-size: 25px;
+    &:hover {
+        color:  rgba(137, 43, 226, 0.284);
+    }
    }
 }
 .big-container {
@@ -124,6 +127,10 @@ body {
         }
     }
 }
+
+.hidden {
+    display: none;
+}
 .panier {
     position: fixed;
     bottom: 0;
@@ -133,7 +140,6 @@ body {
     width: 300px;
     background-color: white;
     .contenu-panier {
-        display: none;
         padding: 20px;
         color: rgba(128, 128, 128, 0.701);
         h5 {
@@ -145,6 +151,7 @@ body {
         p {
             margin: 0;
         }
+        
     }
     .title {
         background-color: rgba(145, 28, 255, 0.972);
@@ -170,3 +177,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.button {
+    transition: ease-in-out 0.5s;
+}
+.active {
+    border: 3px solid black ;
+    background-color: rgba(137, 43, 226, 0.284);
+    transition: ease-in-out 0.5s;
+    scale: 1.1;
+    color: white;
+}
+
