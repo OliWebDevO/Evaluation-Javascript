@@ -139,19 +139,45 @@ body {
     color: white;
     width: 300px;
     background-color: white;
+    border-radius: 20px 20px 0 0;
     .contenu-panier {
-        padding: 20px;
         color: rgba(128, 128, 128, 0.701);
         h5 {
             margin: 0;
         }
-        div {
+        .info-static {
             margin: 15px;
         }
         p {
             margin: 0;
         }
-        
+        .matchs-panier {
+            height: 250px;
+            overflow-y: auto;
+            margin: 20px;
+        }
+    }
+    .choix {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        margin : 5px 0;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: start;
+        font-size: 12px;
+        color: gray;
+        margin : 5px 0 20px 0;
+        a {
+            
+            padding: 0 3px;
+        }
+    }
+    .delete {
+        cursor: pointer;
     }
     .title {
         background-color: rgba(145, 28, 255, 0.972);
@@ -173,9 +199,15 @@ body {
         width: 70px;
     }
 }
+.cote-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+   }
 .gain-box {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .button {
     transition: ease-in-out 0.5s;
@@ -188,3 +220,10 @@ body {
     color: white;
 }
 
+.dark-mode {
+    background-color: black;
+    color: gray;
+    a:not(.panier) {
+        color: gray;
+    }
+}

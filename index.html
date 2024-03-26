@@ -16,7 +16,8 @@
     <div class="wrapper">
         <div class="banner">
             <a href=""><img src="./img/logo.webp" alt=""></a>
-            <a href=""><i class="fa-solid fa-moon" style="color: #ffffff;"></i></a>
+            <a class="light" href=""><i class="fa-solid fa-sun" style="color: #ffffff;"></i></a>
+            
         </div>
         <div class="big-container">
             <div class="sports">
@@ -44,21 +45,26 @@
                 </div>
                 <div class="panier">
                     <div class="title">
-                        <h4>Your Bets (<span>0</span>)</h4>
+                        <h4>Your Bets (<span class ="nBets">0</span>)</h4>
                     </div>
                     <div class="contenu-panier">
                         <div class="matchs-panier"></div>
-                        <div class="mise-box">
-                            <h5>Votre mise</h5>
-                            <input type="text" name="" id="" class="mise">
-                        </div>
-                        <div class="cote-box">
-                            <h5>Cote totale :</h5>
-                            <p class="cote"></p>
-                        </div>
-                        <div class="gain-box">
-                            <h5>Gain potentiel :</h5>
-                            <p><span class="gain">0</span>$</p>
+                        <div class="info-static">
+                            <div class="mise-box">
+                                <h5>Votre mise :</h5>
+                                <div class="inputs">
+                                    <input type="text" name="" id="argent" class="mise">
+                                    <button class="estimate">Estimer</button>
+                                </div>
+                            </div>
+                            <div class="cote-box">
+                                <h5>Cote totale :</h5>
+                                <p class="cote">1</p>
+                            </div>
+                            <div class="gain-box">
+                                <h5>Gain potentiel :</h5>
+                                <p><span class="gain">0</span>$</p>
+                            </div>
                         </div>
                     </div>
                 </div>
