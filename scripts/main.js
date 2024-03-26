@@ -206,7 +206,6 @@ fetch(`./scripts/datas.json`)
                 let panierBets = document.querySelectorAll('.panier-bet');
                 panierBets.forEach(panierBet => {
                     if (parseInt(panierBet.getAttribute('data-index')) === i) {
-                        
                         panierBet.remove();
                         // on réinitialise les gains
                         gain.innerHTML = "0"
